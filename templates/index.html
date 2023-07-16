@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Diabetes Prediction</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    </head>
+    <body>
+        <h2>Diabetes Prediction using Machine Learning</h2>
+        <form action="/predict" method="POST" id="form">
+            HighBP: </td><td><input type="text"><br>
+            HighChol: <input type="text"><br>
+            CholCheck: <input type="text"><br>
+            BMI: <input type="text"><br>
+            Smoker: <input type="text"><br>
+            Stroke: <input type="text"><br>
+            HeartDiseaseorAttack: <input type="text"><br>
+            PhysActivity: <input type="text"><br>
+            Fruits: <input type="text"><br>
+            Veggies: <input type="text"><br>
+            HvyAlcoholConsump: <input type="text"><br>
+            AnyHealthcare: <input type="text"><br>
+            NoDocbcCost: <input type="text"><br>
+            GenHlth: <input type="text"><br>
+            MentHlth: <input type="text"><br>
+            PhysHlth: <input type="text"><br>
+            DiffWalk: <input type="text"><br>
+            Sex: <input type="text"><br>
+            Age: <input type="text"><br>
+            Education: <input type="text"><br>
+            Income: <input type="text"><br>
+            Class: {{dia}}<br>
+            </table>
+            <input type="submit" value="Predict">
+        </form>
+    </body>
+</html>
